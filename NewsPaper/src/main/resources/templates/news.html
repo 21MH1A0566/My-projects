@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Categories</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding-top: 20px;
+            padding-left: 10px;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .logout-link {
+            background-color: CadetBlue;
+            color: black;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            position: absolute;
+            bottom: 30px;
+            left: 15px;
+            right: 15px;
+        }
+
+        .logout-link:hover {
+            background-color: #c9302c;
+        }
+
+        .dark-mode-btn {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            bottom: 85px;
+            left: 15px;
+            right: 15px;
+        }
+
+        .dark-mode-btn:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            margin-top: -15px;
+            margin-right: -15px;
+            flex-grow: 1;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #333;
+            overflow-y: auto;
+            transition: background-color 0.3s, color 0.3s;
+            min-height: 100vh;
+        }
+
+        body.dark-mode {
+    		background-color: #121212;
+    		color: #f4f4f4;
+		}
+
+		body.dark-mode .sidebar 
+		{
+    		background-color: #212121;
+    		color: white;
+		}
+		body.dark-mode .sidebar a {
+    		color: #f4f4f4;
+		}
+
+		body.dark-mode .sidebar a:hover {
+    		background-color: #575757;
+		}
+
+		body.dark-mode .content {
+    		background-color: #1d1d1d;
+    		color: #f9f9f9;
+		}
+
+		body.dark-mode .article {
+    		background-color: #333;
+    		color: #f4f4f4;
+		}
+
+		body.dark-mode .article h2 {
+    		color: #f4f4f4;
+		}
+		body.dark-mode .article p {
+    		color: #ddd;
+		}
+
+		body.dark-mode .article a {
+    		color: #4CAF50;
+		}
+
+		body.dark-mode .article a:hover {
+    		text-decoration: underline;
+		}
+
+        .article {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .article img {
+            width: 100%;
+    		height: auto;
+    		max-height: 400px;
+    		object-fit: contain;
+    		border-radius: 5px;
+        }
+
+        .article h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .article p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .article a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .article a:hover {
+            text-decoration: underline;
+        }
+        .profile-container {
+    		display: flex;
+    		justify-content: center;
+    		margin-top: 20px;
+		}
+		.profile-image {
+		    width: 100px; 
+    		height: 100px;
+    		border-radius: 50%; 
+    		object-fit: cover;
+    		border: 2px solid #fff; 
+		}
+    </style>
+</head>
+<body class="dark-mode">
+
+    <div class="sidebar">
+    <div class="profile-container" >
+        <img th:src="${user.base64Image != null && user.base64Image != '' ? 'data:image/jpeg;base64,' + user.base64Image : '/images/no-profile.jpg'}" 
+     class="profile-image"/>
+    </div>
+        <a style="margin-top:25px" href="#" onclick="loadContent('technology')">Technology</a>
+        <a href="#" onclick="loadContent('sports')">Sports</a>
+        <a href="#" onclick="loadContent('health')">Health</a>
+        <a href="#" onclick="loadContent('business')">Business</a>
+        <a href="#" onclick="loadContent('entertainment')">Entertainment</a>
+        <a href="#" onclick="loadContent('science')">Science</a>
+        <a href="#" onclick="loadContent('politics')">Politics</a>
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <a href="/home" class="logout-link">LOGOUT</a>
+    </div>
+
+    <div class="content" id="newsContainer">
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        async function loadContent(category) {
+            const response = await fetch(`/news?category=${category}`);
+            const newsData = await response.json();
+            const newsContainer = document.getElementById('newsContainer');
+            newsContainer.innerHTML = "";
+            newsData.articles.forEach(article => {
+                const articleElement = document.createElement('div');
+                const imageUrl = article.urlToImage ? article.urlToImage : null;
+                
+                articleElement.classList.add('article');
+                
+                let articleContent = `
+                    <h2>${article.title}</h2>
+                    <p>${article.description}</p>
+                    <a href="${article.url}" target="_blank">Read Full</a>
+                `;
+                
+                // Only include the image if urlToImage exists
+                if (imageUrl) {
+                    articleContent = `
+                        <h2>${article.title}</h2>
+                        <img src="${imageUrl}" alt="News image">
+                        <p>${article.description}</p>
+                        <a href="${article.url}" target="_blank">Read Full</a>
+                    `;
+                }
+                articleElement.innerHTML = articleContent;
+                newsContainer.appendChild(articleElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => loadContent('general'));
+    </script>
+
+</body>
+</html>
