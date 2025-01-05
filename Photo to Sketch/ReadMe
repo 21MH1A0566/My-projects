@@ -1,11 +1,1 @@
-The integration of Artificial Intelligence (AI) has significantly transformed various domains, 
-enabling innovative solutions for tasks like image processing and user engagement. This project, 
-titled Sketch Creator, focuses on the development of a Python-based application that converts 
-images into pencil sketches, combining computer vision techniques with a user-friendly GUI. 
-Through tools like Tkinter for the interface and image processing libraries, the system allows users 
-to seamlessly upload images and generate their sketch versions in real time. The project also 
-highlights the broader applications of AI in image manipulation and Artistic transformations. By 
-bridging functionality with usability, this tool showcases how AI-driven approaches can enhance 
-creativity and automate visual effects. 
-This project emphasizes the growing role of AI in simplifying complex tasks, demonstrating its 
-potential impact across fields such as graphic design, education, and entertainment. 
+The integration of Artificial Intelligence (AI) has significantly transformed various domains,enabling innovative solutions for tasks like image processing and user engagement. This project,titled Sketch Creator, focuses on the development of a Python-based application that converts images into pencil sketches, combining computer vision techniques with a user-friendly GUI.Through tools like Tkinter for the interface and image processing libraries, the system allows users to seamlessly upload images and generate their sketch versions in real time. The project also highlights the broader applications of AI in image manipulation and Artistic transformations. By bridging functionality with usability, this tool showcases how AI-driven approaches can enhance creativity and automate visual effects. This project emphasizes the growing role of AI in simplifying complex tasks, demonstrating its potential impact across fields such as graphic design, education, and entertainment. 
