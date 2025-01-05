@@ -201,8 +201,8 @@
 
     <div class="sidebar">
     <div class="profile-container" >
-        <img th:src="${user.base64Image != null && user.base64Image != '' ? 'data:image/jpeg;base64,' + user.base64Image : '/images/no-profile.jpg'}" 
-     class="profile-image"/>
+        <img th:if="${user.base64Image != null and user.base64Image != ''}" th:src="'data:image/jpeg;base64,' + ${user.base64Image}" class="profile-image"/>
+	<img th:if="${user.base64Image == null or user.base64Image == ''}" th:src="'/images/no-profile.jpg'" class="profile-image"/>
     </div>
         <a style="margin-top:25px" href="#" onclick="loadContent('technology')">Technology</a>
         <a href="#" onclick="loadContent('sports')">Sports</a>
