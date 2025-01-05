@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeLeaf.com">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('/images/insertbg.jpg');
+            background-size:cover;
+            background-position:center;
+            color: white;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #28a745;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        form {
+            background-color: grey;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            height:900px;
+            width:600px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"]{
+            width: 80%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333;
+        }
+        select
+        {
+        width : 86%;
+        padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+<body>
+<form th:object="${cseform}" th:action="@{/register}" method="post">
+<h1 align=center style="color:orange">REGISTRATION FORM</h1>
+<label for="id">Enter Your ID:</label>
+<input type="number" id="id" th:field="*{id}" placeholder="Enter ur id">
+<br>
+<label for="name">Enter Your Name:</label>
+<input type="text" id="name" th:field="*{name}" placeholder="Enter ur name">
+<br>
+<label for="branch">Enter Your Branch:</label>
+<select th:field="*{branch}" id="branch">
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+<option value="Mech">Mech</option>
+<option value="Civil">Civil</option>
+<option value="AIML">AIML</option>
+</select>
+<br>
+<label for="college">Enter Your College:</label>
+<select th:field="*{college}" id="college">
+<option value="AEC">AEC</option>
+<option value="ACET">ACET</option>
+<option value="ACOE">ACOE</option>
+</select>
+<br>
+<label for="city">Enter Your City:</label>
+<input type="text" id="city" th:field="*{city}" placeholder="Enter ur city">
+<br>
+<label for="gender">Enter Your Gender:</label>
+<input type="radio" id="gender" th:field="*{gender}" value="Male">MALE
+<input type="radio" id="gender" th:field="*{gender}" value="Female">FEMALE
+<br>
+<label for="skills">Enter Your Skills:</label>
+<input type="checkbox" id="skills" th:field="*{skills}" value="C">C
+<input type="checkbox" id="skills" th:field="*{skills}" value="C++">C++
+<input type="checkbox" id="skills" th:field="*{skills}" value="Java">Java
+<input type="checkbox" id="skills" th:field="*{skills}" value="Python">Python
+<input type="checkbox" id="skills" th:field="*{skills}" value="HTML">HTML
+<br>
+<input type="submit">
+</form>
+</body>
+</html>

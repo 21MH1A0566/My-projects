@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image:url('/images/homebg.jpg');
+            margin: 0;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #28a745;
+            border-radius: 5px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            margin-top:30px;
+            background-color: cyan;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            height:500px;
+        }
+
+        .message {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 50px;
+            font-size:50px;
+        }
+        .circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius:100%;
+    margin-top:50px;
+    position: absolute;
+    animation: move-and-rotate 5s linear infinite;
+}
+@keyframes move-and-rotate {
+     0% {
+        transform: translateX(-390px) rotate(0deg); 
+    }
+    50% {
+        transform: translateX(12vw) rotate(360deg);
+    }
+    100% {
+        transform: translateX(-390px) rotate(0deg);
+    }
+}
+    </style>
+</head>
+<body>
+<div class="container">
+<a th:href="@{/insert}">INSERT</a>
+<a th:href="@{/update}">UPDATE</a>
+<a th:href="@{/search}">SEARCH</a>
+<a th:href="@{/display}">DISPLAY</a>
+<a th:href="@{/delete}">DELETE</a>
+<div class="message" th:text="${message}"></div>
+<img src="/images/earth.jpg" class="circle-image">
+</div>
+</body>
+</html>
