@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/job_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Job Title"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/experience_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Experience :"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/experience_wanted"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/experience_wanted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Experience you want"
+                    app:layout_constraintStart_toEndOf="@id/experience_heading"
+                    app:layout_constraintTop_toTopOf="@id/experience_heading" />
+
+                <TextView
+                    android:id="@+id/skills_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Skills :"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/skills_wanted"
+                    app:layout_constraintTop_toTopOf="@id/skills_wanted" />
+
+                <TextView
+                    android:id="@+id/skills_wanted"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Skills you want"
+                    app:layout_constraintStart_toStartOf="@id/experience_wanted"
+                    app:layout_constraintTop_toBottomOf="@id/experience_wanted" />
+
+                <TextView
+                    android:id="@+id/job_status_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Job Status :"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/job_status_wanted"
+                    app:layout_constraintTop_toTopOf="@id/job_status_wanted" />
+
+                <TextView
+                    android:id="@+id/job_status_wanted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Job Status Here"
+                    app:layout_constraintStart_toStartOf="@id/skills_wanted"
+                    app:layout_constraintTop_toBottomOf="@id/skills_wanted" />
+
+                <TextView
+                    android:id="@+id/salary_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Salary :"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/salary_wanted"
+                    app:layout_constraintTop_toTopOf="@id/salary_wanted" />
+
+                <TextView
+                    android:id="@+id/salary_wanted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Salary Here"
+                    app:layout_constraintStart_toStartOf="@id/job_status_wanted"
+                    app:layout_constraintTop_toBottomOf="@id/job_status_wanted" />
+
+                <TextView
+                    android:id="@+id/about_job_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="About Job :"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/about_job_wanted"
+                    app:layout_constraintTop_toTopOf="@id/about_job_wanted" />
+
+                <TextView
+                    android:id="@+id/about_job_wanted"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="About Job Here"
+                    app:layout_constraintStart_toStartOf="@id/salary_wanted"
+                    app:layout_constraintTop_toBottomOf="@id/salary_wanted" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

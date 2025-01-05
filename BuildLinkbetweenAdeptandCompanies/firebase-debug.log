@@ -1,0 +1,392 @@
+[debug] [2024-11-17T11:08:31.458Z] ----------------------------------------------------------------------
+[debug] [2024-11-17T11:08:31.464Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vsdvn\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-11-17T11:08:31.464Z] CLI Version:   13.25.0
+[debug] [2024-11-17T11:08:31.464Z] Platform:      win32
+[debug] [2024-11-17T11:08:31.464Z] Node Version:  v20.11.1
+[debug] [2024-11-17T11:08:31.464Z] Time:          Sun Nov 17 2024 16:38:31 GMT+0530 (India Standard Time)
+[debug] [2024-11-17T11:08:31.464Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-17T11:08:31.569Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-17T11:08:31.570Z] > authorizing via signed-in user (vsdvnharshavardhan@gmail.com)
+[debug] [2024-11-17T11:08:31.813Z] java version "20.0.1" 2023-04-18
+Java(TM) SE Runtime Environment (build 20.0.1+9-29)
+
+[debug] [2024-11-17T11:08:31.814Z] Java HotSpot(TM) 64-Bit Server VM (build 20.0.1+9-29, mixed mode, sharing)
+
+[debug] [2024-11-17T11:08:31.829Z] Parsed Java major version: 20
+[info] i  emulators: Starting emulators: firestore, storage, dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: firestore, storage, dataconnect"}}
+[debug] [2024-11-17T11:08:31.840Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-17T11:08:31.840Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-17T11:08:31.841Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-17T11:08:31.841Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-17T11:08:31.841Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-17T11:08:31.841Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-17T11:08:31.844Z] [hub] writing locator at C:\Users\vsdvn\AppData\Local\Temp\hub-blac-28fc0.json
+[info] i  firestore: downloading cloud-firestore-emulator-v1.19.8.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.19.8.jar..."}}
+[debug] [2024-11-17T11:08:31.856Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 
+[debug] [2024-11-17T11:08:32.483Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 200
+[debug] [2024-11-17T11:08:32.483Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar [stream]
+[debug] [2024-11-17T11:08:47.770Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-17T11:08:47.771Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-11-17T11:08:47.771Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\vsdvn\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","blac-28fc0","--rules","C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\vsdvn\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"blac-28fc0\",\"--rules\",\"C:\\\\Users\\\\vsdvn\\\\AndroidStudioProjects\\\\BuildLinkbetweenAdeptandCompanies\\\\firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-11-17T11:08:50.230Z] I1117 16:38:50.212867    2548 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 5bb2] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1117 16:38:50.224407    2548 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 5bb2] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1117 16:38:50.212867    2548 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 5bb2] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1117 16:38:50.224407    2548 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 5bb2] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-17T11:08:50.231Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-17T11:08:50.231Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-17T11:08:50.231Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\vsdvn\\.cache\\firebase\\emulators\\dataconnect-emulator-1.7.0.exe","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\vsdvn\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-1.7.0.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=C:\\\\Users\\\\vsdvn\\\\AndroidStudioProjects\\\\BuildLinkbetweenAdeptandCompanies\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-11-17T11:08:50.293Z] I1117 16:38:50.290402   19292 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1117 16:38:50.290402   19292 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-17T11:08:50.346Z] I1117 16:38:50.300172   19292 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 7179] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1117 16:38:50.305687   19292 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 7179] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1117 16:38:50.320258   19292 codegen.go:82] [connector "default" kotlinSdk] Generating sources into "C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\app\\src\\main\\java\\connectors\\default"
+I1117 16:38:50.329770   19292 collector.go:107] schema extensions wrote into "C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [65742B] 
+I1117 16:38:50.330769   19292 collector.go:107] connector "default" kotlinSdk wrote into "C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\app\\src\\main\\java\\connectors\\default"
+Generated sources: DefaultConnectorKeys.kt [1088B] DefaultConnectorEnums.kt [790B] DefaultConnector.kt [7903B] 
+I1117 16:38:50.330769   19292 load.go:115] Finished reloading
+I1117 16:38:50.343535   19292 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1117 16:38:50.344040   19292 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1117 16:38:50.300172   19292 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 7179] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1117 16:38:50.305687   19292 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 7179] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \nI1117 16:38:50.320258   19292 codegen.go:82] [connector \"default\" kotlinSdk] Generating sources into \"C:\\\\Users\\\\vsdvn\\\\AndroidStudioProjects\\\\BuildLinkbetweenAdeptandCompanies\\\\app\\\\src\\\\main\\\\java\\\\connectors\\\\default\"\nI1117 16:38:50.329770   19292 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\vsdvn\\\\AndroidStudioProjects\\\\BuildLinkbetweenAdeptandCompanies\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [65742B] \nI1117 16:38:50.330769   19292 collector.go:107] connector \"default\" kotlinSdk wrote into \"C:\\\\Users\\\\vsdvn\\\\AndroidStudioProjects\\\\BuildLinkbetweenAdeptandCompanies\\\\app\\\\src\\\\main\\\\java\\\\connectors\\\\default\"\nGenerated sources: DefaultConnectorKeys.kt [1088B] DefaultConnectorEnums.kt [790B] DefaultConnector.kt [7903B] \nI1117 16:38:50.330769   19292 load.go:115] Finished reloading\nI1117 16:38:50.343535   19292 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\nI1117 16:38:50.344040   19292 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[info] i  dataconnect: Started up Postgres server, listening on {"address":"127.0.0.1","family":"IPv4","port":5432} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Started up Postgres server, listening on {\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5432}"}}
+[debug] [2024-11-17T11:08:51.994Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-17T11:08:51.995Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-17T11:08:51.996Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"BuildLinkbetweenAdeptandCompanies","maxOpenConnections":1}
+[debug] [2024-11-17T11:08:52.033Z] Frontend message 
+[debug] [2024-11-17T11:08:52.035Z] Backend message AuthenticationResponse
+[debug] [2024-11-17T11:08:52.036Z] Backend message ParameterStatus
+[debug] [2024-11-17T11:08:52.036Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.037Z] Frontend message Query
+[debug] [2024-11-17T11:08:52.038Z] Backend message EmptyQuery
+[debug] [2024-11-17T11:08:52.038Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.057Z] Frontend message Query
+[debug] [2024-11-17T11:08:52.062Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.063Z] Backend message DataRow
+[debug] [2024-11-17T11:08:52.064Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.064Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.064Z] Frontend message Parse
+[debug] [2024-11-17T11:08:52.066Z] Backend message ParseComplete
+[debug] [2024-11-17T11:08:52.066Z] Frontend message Describe
+[debug] [2024-11-17T11:08:52.066Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-17T11:08:52.066Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.067Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.067Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.067Z] Frontend message Bind
+[debug] [2024-11-17T11:08:52.069Z] Backend message BindComplete
+[debug] [2024-11-17T11:08:52.069Z] Frontend message Execute
+[debug] [2024-11-17T11:08:52.070Z] Backend message DataRow
+[debug] [2024-11-17T11:08:52.071Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.071Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.072Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.072Z] Frontend message Parse
+[debug] [2024-11-17T11:08:52.073Z] Backend message ParseComplete
+[debug] [2024-11-17T11:08:52.073Z] Frontend message Describe
+[debug] [2024-11-17T11:08:52.073Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-17T11:08:52.073Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.074Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.074Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.075Z] Frontend message Bind
+[debug] [2024-11-17T11:08:52.076Z] Backend message BindComplete
+[debug] [2024-11-17T11:08:52.076Z] Frontend message Execute
+[debug] [2024-11-17T11:08:52.077Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.077Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.077Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.080Z] Frontend message Parse
+[debug] [2024-11-17T11:08:52.081Z] Backend message ParseComplete
+[debug] [2024-11-17T11:08:52.082Z] Frontend message Describe
+[debug] [2024-11-17T11:08:52.082Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-17T11:08:52.082Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.082Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.083Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.083Z] Frontend message Bind
+[debug] [2024-11-17T11:08:52.094Z] Backend message BindComplete
+[debug] [2024-11-17T11:08:52.094Z] Frontend message Execute
+[debug] [2024-11-17T11:08:52.095Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.095Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.095Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.115Z] Frontend message Query
+[debug] [2024-11-17T11:08:52.116Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.117Z] Backend message DataRow
+[debug] [2024-11-17T11:08:52.117Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.117Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.118Z] Frontend message Parse
+[debug] [2024-11-17T11:08:52.119Z] Backend message ParseComplete
+[debug] [2024-11-17T11:08:52.119Z] Frontend message Describe
+[debug] [2024-11-17T11:08:52.119Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-17T11:08:52.119Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.119Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.119Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.120Z] Frontend message Bind
+[debug] [2024-11-17T11:08:52.120Z] Backend message BindComplete
+[debug] [2024-11-17T11:08:52.120Z] Frontend message Execute
+[debug] [2024-11-17T11:08:52.121Z] Backend message DataRow
+[debug] [2024-11-17T11:08:52.121Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.121Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.121Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.122Z] Frontend message Parse
+[debug] [2024-11-17T11:08:52.122Z] Backend message ParseComplete
+[debug] [2024-11-17T11:08:52.123Z] Frontend message Describe
+[debug] [2024-11-17T11:08:52.123Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-17T11:08:52.123Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.123Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.123Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.123Z] Frontend message Bind
+[debug] [2024-11-17T11:08:52.124Z] Backend message BindComplete
+[debug] [2024-11-17T11:08:52.124Z] Frontend message Execute
+[debug] [2024-11-17T11:08:52.125Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.125Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.125Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.125Z] Frontend message Parse
+[debug] [2024-11-17T11:08:52.126Z] Backend message ParseComplete
+[debug] [2024-11-17T11:08:52.126Z] Frontend message Describe
+[debug] [2024-11-17T11:08:52.126Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-17T11:08:52.127Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.127Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.127Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.127Z] Frontend message Bind
+[debug] [2024-11-17T11:08:52.132Z] Backend message BindComplete
+[debug] [2024-11-17T11:08:52.132Z] Frontend message Execute
+[debug] [2024-11-17T11:08:52.132Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.132Z] Frontend message Sync
+[debug] [2024-11-17T11:08:52.133Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.140Z] Frontend message Query
+[debug] [2024-11-17T11:08:52.141Z] Backend message RowDescriptionMessage
+[debug] [2024-11-17T11:08:52.141Z] Backend message DataRow
+[debug] [2024-11-17T11:08:52.141Z] Backend message CommandComplete
+[debug] [2024-11-17T11:08:52.141Z] Backend message ReadyForQuery
+[debug] [2024-11-17T11:08:52.143Z] I1117 16:38:52.143088   19292 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies fda6] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1117 16:38:52.143088   19292 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies fda6] UpdateSchema(): done sources: schema\\schema.gql [1384B] \n"}}
+[debug] [2024-11-17T11:08:52.143Z] I1117 16:38:52.143088   19292 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies fda6] UpdateConnector(default): done sources: connector\queries.gql [1855B] connector\mutations.gql [1163B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1117 16:38:52.143088   19292 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies fda6] UpdateConnector(default): done sources: connector\\queries.gql [1855B] connector\\mutations.gql [1163B] \n"}}
+[debug] [2024-11-17T11:08:52.150Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-11-17T11:08:52.150Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-11-17T11:08:52.150Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.1.3.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.1.3.jar..."}}
+[debug] [2024-11-17T11:08:52.158Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 
+[debug] [2024-11-17T11:08:52.537Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 200
+[debug] [2024-11-17T11:08:52.537Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar [stream]
+[debug] [2024-11-17T11:09:01.393Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-17T11:09:02.104Z] Temp file directory for storage emulator: C:\Users\vsdvn\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\vsdvn\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
+[debug] [2024-11-17T11:09:02.122Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
+[debug] [2024-11-17T11:09:02.181Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
+[debug] [2024-11-17T11:09:02.182Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
+[debug] [2024-11-17T11:09:02.820Z] Data is 3615311
+[debug] [2024-11-17T11:09:02.820Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.820Z] [unzip] Processing entry: client\
+[debug] [2024-11-17T11:09:02.820Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\
+[debug] [2024-11-17T11:09:02.821Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2024-11-17T11:09:02.822Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-11-17T11:09:02.822Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.822Z] [unzip] Writing file: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\favicon-16x16.png
+[debug] [2024-11-17T11:09:02.823Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2024-11-17T11:09:02.823Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-11-17T11:09:02.823Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.823Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\safari-pinned-tab.svg
+[debug] [2024-11-17T11:09:02.825Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2024-11-17T11:09:02.825Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-11-17T11:09:02.825Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.825Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\favicon.ico
+[debug] [2024-11-17T11:09:02.827Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
+[debug] [2024-11-17T11:09:02.827Z] [unzip] Processing entry: client\index.html
+[debug] [2024-11-17T11:09:02.827Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.827Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\index.html
+[debug] [2024-11-17T11:09:02.828Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2024-11-17T11:09:02.828Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-11-17T11:09:02.828Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.828Z] [unzip] Writing file: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-192x192.png
+[debug] [2024-11-17T11:09:02.829Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2024-11-17T11:09:02.829Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-11-17T11:09:02.829Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.829Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\apple-touch-icon.png
+[debug] [2024-11-17T11:09:02.830Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2024-11-17T11:09:02.831Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-11-17T11:09:02.831Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.831Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-512x512.png
+[debug] [2024-11-17T11:09:02.833Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2024-11-17T11:09:02.833Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-11-17T11:09:02.833Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.833Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\manifest.json
+[debug] [2024-11-17T11:09:02.834Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-11-17T11:09:02.834Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-11-17T11:09:02.834Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.834Z] [unzip] Writing file: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\robots.txt
+[debug] [2024-11-17T11:09:02.835Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2024-11-17T11:09:02.835Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-11-17T11:09:02.835Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.836Z] [unzip] Writing file: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\mstile-150x150.png
+[debug] [2024-11-17T11:09:02.836Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.836Z] [unzip] Processing entry: client\assets\
+[debug] [2024-11-17T11:09:02.836Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\
+[debug] [2024-11-17T11:09:02.837Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
+[debug] [2024-11-17T11:09:02.837Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js.map
+[debug] [2024-11-17T11:09:02.837Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-17T11:09:02.837Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js.map
+[debug] [2024-11-17T11:09:02.870Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
+[debug] [2024-11-17T11:09:02.870Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js
+[debug] [2024-11-17T11:09:02.870Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-17T11:09:02.870Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js
+[debug] [2024-11-17T11:09:02.879Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2024-11-17T11:09:02.879Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2024-11-17T11:09:02.879Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-17T11:09:02.879Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-BdgySamB.css
+[debug] [2024-11-17T11:09:02.881Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.882Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-11-17T11:09:02.882Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\
+[debug] [2024-11-17T11:09:02.882Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-11-17T11:09:02.882Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-11-17T11:09:02.882Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions
+[debug] [2024-11-17T11:09:02.882Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\default-extension.png
+[debug] [2024-11-17T11:09:02.883Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.883Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-11-17T11:09:02.883Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\
+[debug] [2024-11-17T11:09:02.883Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-11-17T11:09:02.884Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-11-17T11:09:02.884Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\img
+[debug] [2024-11-17T11:09:02.884Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\database.png
+[debug] [2024-11-17T11:09:02.885Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.885Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-11-17T11:09:02.885Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\
+[debug] [2024-11-17T11:09:02.885Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-11-17T11:09:02.885Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-11-17T11:09:02.885Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.885Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-11-17T11:09:02.886Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-11-17T11:09:02.886Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-11-17T11:09:02.886Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.886Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-11-17T11:09:02.887Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-11-17T11:09:02.887Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-11-17T11:09:02.887Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.887Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-11-17T11:09:02.888Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-11-17T11:09:02.888Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-11-17T11:09:02.888Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.888Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-11-17T11:09:02.889Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-11-17T11:09:02.889Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-11-17T11:09:02.889Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.889Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-11-17T11:09:02.890Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-11-17T11:09:02.890Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-11-17T11:09:02.890Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.891Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-11-17T11:09:02.892Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-11-17T11:09:02.892Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-11-17T11:09:02.892Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.892Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-11-17T11:09:02.893Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-11-17T11:09:02.893Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-11-17T11:09:02.893Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.894Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-11-17T11:09:02.895Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-11-17T11:09:02.895Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-11-17T11:09:02.895Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.895Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-11-17T11:09:02.896Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-11-17T11:09:02.896Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-11-17T11:09:02.896Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.896Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-11-17T11:09:02.897Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-11-17T11:09:02.897Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-11-17T11:09:02.897Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.897Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-11-17T11:09:02.898Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-11-17T11:09:02.898Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-11-17T11:09:02.898Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.898Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-11-17T11:09:02.899Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-11-17T11:09:02.899Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-11-17T11:09:02.899Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-17T11:09:02.899Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-11-17T11:09:02.900Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-11-17T11:09:02.900Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-11-17T11:09:02.900Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.901Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\browserconfig.xml
+[debug] [2024-11-17T11:09:02.901Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2024-11-17T11:09:02.901Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-11-17T11:09:02.901Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-17T11:09:02.902Z] [unzip] Writing file: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\client\favicon-32x32.png
+[debug] [2024-11-17T11:09:02.902Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.902Z] [unzip] Processing entry: server\
+[debug] [2024-11-17T11:09:02.902Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\
+[debug] [2024-11-17T11:09:02.903Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
+[debug] [2024-11-17T11:09:02.903Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2024-11-17T11:09:02.903Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-11-17T11:09:02.903Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs.map
+[debug] [2024-11-17T11:09:02.908Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
+[debug] [2024-11-17T11:09:02.909Z] [unzip] Processing entry: server\server.mjs
+[debug] [2024-11-17T11:09:02.909Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-11-17T11:09:02.909Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs
+[debug] [2024-11-17T11:09:02.913Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-17T11:09:02.913Z] [unzip] Processing entry: server\assets\
+[debug] [2024-11-17T11:09:02.914Z] [unzip] mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\assets\
+[debug] [2024-11-17T11:09:02.914Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2024-11-17T11:09:02.914Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-11-17T11:09:02.914Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-11-17T11:09:02.914Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-11-17T11:09:02.915Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2024-11-17T11:09:02.915Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-11-17T11:09:02.915Z] [unzip] else mkdir: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-11-17T11:09:02.915Z] [unzip] deflating: C:\Users\vsdvn\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-11-17T11:09:02.916Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-17T11:09:02.916Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-17T11:09:02.917Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\vsdvn\\.cache\\firebase\\emulators\\ui-v1.14.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\vsdvn\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.14.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-17T11:09:03.028Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-11-17T11:09:03.029Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[debug] [2024-11-17T11:09:03.130Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-11-17T11:09:03.140Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-11-17T11:09:03.140Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"BuildLinkbetweenAdeptandCompanies","connectionString":"dbname='fdcdb' host='127.0.0.1' port='5432' sslmode='disable' dbname='fdcdb'"}]}
+[debug] [2024-11-17T11:09:03.149Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator     │ Host:Port      │ View in Emulator UI             │
+├──────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore    │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├──────────────┼────────────────┼─────────────────────────────────┤
+│ Storage      │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+├──────────────┼────────────────┼─────────────────────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │ n/a                             │
+└──────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-11-17T11:10:52.440Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] !  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[warn] !  Firestore Emulator has exited upon receiving signal: SIGINT 
+[info] i  storage: Stopping Storage Emulator {"metadata":{"emulator":{"name":"storage"},"message":"Stopping Storage Emulator"}}
+[debug] [2024-11-17T11:10:52.459Z] Stopping rules runtime. {"metadata":{"emulator":{"name":"storage"},"message":"Stopping rules runtime."}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[error] !!  dataconnect: Postgres threw an unexpected error, shutting down the Data Connect emulator: Error: read ECONNRESET {"metadata":{"emulator":{"name":"dataconnect"},"message":"Postgres threw an unexpected error, shutting down the Data Connect emulator: Error: read ECONNRESET"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-11-17T11:10:52.469Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[warn] !  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2024-11-17T11:10:52.476Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2024-11-17T11:10:52.477Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.

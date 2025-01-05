@@ -1,0 +1,13 @@
+I1117 16:38:50.290402   19292 load.go:37] Reloading schema and connectors...
+I1117 16:38:50.300172   19292 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 7179] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1117 16:38:50.305687   19292 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies 7179] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1117 16:38:50.320258   19292 codegen.go:82] [connector "default" kotlinSdk] Generating sources into "C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\app\\src\\main\\java\\connectors\\default"
+I1117 16:38:50.329770   19292 collector.go:107] schema extensions wrote into "C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [65742B] 
+I1117 16:38:50.330769   19292 collector.go:107] connector "default" kotlinSdk wrote into "C:\\Users\\vsdvn\\AndroidStudioProjects\\BuildLinkbetweenAdeptandCompanies\\app\\src\\main\\java\\connectors\\default"
+Generated sources: DefaultConnectorKeys.kt [1088B] DefaultConnectorEnums.kt [790B] DefaultConnector.kt [7903B] 
+I1117 16:38:50.330769   19292 load.go:115] Finished reloading
+I1117 16:38:50.343535   19292 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1117 16:38:50.344040   19292 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1117 16:38:52.143088   19292 control.go:45] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies fda6] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1117 16:38:52.143088   19292 control.go:73] [engine.Service /emulator/BuildLinkbetweenAdeptandCompanies fda6] UpdateConnector(default): done sources: connector\queries.gql [1855B] connector\mutations.gql [1163B] 

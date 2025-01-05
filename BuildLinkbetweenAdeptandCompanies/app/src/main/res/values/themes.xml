@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BuildLinkBetweenAdeptAndCompanies" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="fontFamily">@font/aldrich</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BuildLinkBetweenAdeptAndCompanies" parent="Base.Theme.BuildLinkBetweenAdeptAndCompanies" />
+</resources>

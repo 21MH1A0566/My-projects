@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_activity">
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="56dp"
+      android:layout_marginEnd="32dp"
+      android:hint="Email"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buildlink">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/password"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:hint="Password"
+      app:passwordToggleEnabled="true"
+      app:passwordToggleTint="@color/black"
+      app:layout_constraintEnd_toEndOf="@+id/email"
+      app:layout_constraintStart_toStartOf="@+id/email"
+      app:layout_constraintTop_toBottomOf="@+id/email">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="150dp"
+      android:fontFamily="sans-serif-condensed"
+      android:text="BLAC"
+      android:textSize="60dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/buildlink"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="🔗 Build Link between Adept and Companies "
+      android:textAlignment="center"
+      android:textSize="10dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+  <Button
+      android:id="@+id/loginbtn"
+      style="@style/Widget.Material3.Button.Icon"
+      android:layout_width="0dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="@color/blue"
+      android:text="LOG IN"
+      android:elevation="9dp"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="@+id/password"
+      app:layout_constraintStart_toStartOf="@+id/password"
+      app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

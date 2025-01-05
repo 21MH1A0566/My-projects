@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1041176022126",
+    "project_id": "blac-28fc0",
+    "storage_bucket": "blac-28fc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041176022126:android:f630381293ca09788e2a7f",
+        "android_client_info": {
+          "package_name": "com.harsha.buildlinkbetweenadeptandcompanies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRYg254v_cTSDuVz_pmlHBFSxkNwUnuDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
