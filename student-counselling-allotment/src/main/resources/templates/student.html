@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 380px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+            min-height: 450px;
+        }
+
+        h2 {
+            color: #2575fc;
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus,
+        input[type="file"]:focus {
+            border-color: #2575fc;
+            background-color: #f1faff;
+        }
+
+        input[type="submit"] {
+            background-color: #2575fc;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1a61c8;
+        }
+
+        .message-alert {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration</h2>
+        <form action="/registered" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" id="phone" required>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" name="dob" id="dob" required>
+    
+    <label for="tenth">Tenth Marks:</label>
+    <input type="number" name="tenth" id="tenth" required>
+    
+    <label for="inter">Intermediate Marks:</label>
+    <input type="number" name="inter" id="inter" required>
+    
+    <label for="photo">User Photo:</label>
+    <input type="file" name="photo" id="photo" accept="image/*" required>
+    
+    <button type="submit">Register</button>
+</form>
+
+        <div th:if="${message}" class="message-alert">
+            <script type="text/javascript">
+                alert("Phone number or email already exists");
+            </script>
+        </div>
+
+        <div class="footer">
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
